@@ -1,0 +1,31 @@
+@mixin form-size{
+  min-height: 40px;
+  max-height: 40px;
+  width: 356px;
+  display: flex;
+  position: relative;
+}
+
+@mixin input-style($width: 285px){
+  width: $width;
+  max-height: 40px;
+  border-radius: 8px;
+  padding-left: 15px;
+  border: 1px solid var(--border);
+  &::placeholder{
+    color: var(--placeholder);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 100%;
+  }
+  &:focus{
+    outline: none;
+  }
+}
+
+@mixin action-text{
+  color: var(--black);
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 140%;
+}

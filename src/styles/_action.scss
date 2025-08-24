@@ -1,0 +1,16 @@
+@use "mixins";
+
+#app-actions__del{
+  border: none;
+  background-color: transparent;
+  @include mixins.action-text;
+}
+
+.app-actions__total{
+  @include mixins.action-text;
+}
+
+.actions{
+  display: flex;
+  justify-content: space-between;
+}

@@ -1,0 +1,17 @@
+@use "mixins";
+
+#app-form-add__btn{
+  width: 55px;
+  height: 40px;
+  background-color: var(--secondary-black);
+  border-radius: 8px;
+  border: 1px solid var(--secondary-black);
+  color: var(--main);
+  font-size: 16px;
+  font-weight: 400;
+  margin-left: 16px;
+}
+
+#form-add-input{
+  @include mixins.input-style();
+}

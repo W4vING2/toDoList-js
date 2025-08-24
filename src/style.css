@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+#app-actions__del {
+  border: none;
+  background-color: transparent;
+  color: var(--black);
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 140%;
+}
+
+.app-actions__total {
+  color: var(--black);
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 140%;
+}
+
+.actions {
+  display: flex;
+  justify-content: space-between;
+}
+
+#app-form-add__btn {
+  width: 55px;
+  height: 40px;
+  background-color: var(--secondary-black);
+  border-radius: 8px;
+  border: 1px solid var(--secondary-black);
+  color: var(--main);
+  font-size: 16px;
+  font-weight: 400;
+  margin-left: 16px;
+}
+
+#form-add-input {
+  width: 285px;
+  max-height: 40px;
+  border-radius: 8px;
+  padding-left: 15px;
+  border: 1px solid var(--border);
+}
+#form-add-input::placeholder {
+  color: var(--placeholder);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 100%;
+}
+#form-add-input:focus {
+  outline: none;
+}
+
+#app-form-search__btn {
+  border: none;
+  background-color: transparent;
+  position: absolute;
+  right: 12px;
+  top: 12px;
+}
+
+#form-search-input {
+  width: 356px;
+  max-height: 40px;
+  border-radius: 8px;
+  padding-left: 15px;
+  border: 1px solid var(--border);
+}
+#form-search-input::placeholder {
+  color: var(--placeholder);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 100%;
+}
+#form-search-input:focus {
+  outline: none;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+  background-color: var(--background);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+#app {
+  background-color: var(--main);
+  text-align: center;
+  min-width: 320px;
+  height: 430px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 8px;
+  padding: 24px;
+  gap: 24px;
+}
+
+form {
+  min-height: 40px;
+  max-height: 40px;
+  width: 356px;
+  display: flex;
+  position: relative;
+}
+
+.app-name {
+  font-size: 24px;
+  line-height: 120%;
+  font-weight: 600;
+}
+
+:root {
+  --background: #F5F5F5;
+  --main: #ffffff;
+  --black: #000000;
+  --border: #D9D9D9;
+  --placeholder: #B3B3B3;
+  --secondary-black: #2C2C2C;
+}
+
+/*# sourceMappingURL=style.css.map */

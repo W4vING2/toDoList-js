@@ -1,0 +1,36 @@
+@use "mixins";
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+  background-color: var(--background);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+#app{
+  background-color: var(--main);
+  text-align: center;
+  min-width: 320px;
+  height: 430px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 8px;
+  padding: 24px;
+  gap: 24px;
+}
+
+form{
+  @include mixins.form-size;
+}
+
+.app-name{
+  font-size: 24px;
+  line-height: 120%;
+  font-weight: 600;
+}
