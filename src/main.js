@@ -1,4 +1,5 @@
 import './style.css'
+import {toDoClass} from "./scripts/toDoClass.js";
 
 document.querySelector('#app').innerHTML = `
   <h1 class="app-name">To Do List</h1>
@@ -11,8 +12,14 @@ document.querySelector('#app').innerHTML = `
     <button type="button" id="app-form-search__btn"><img alt="search-img" src="/public/img-search.png" width="16px" height="16px"></button>
   </form>
   <div class="actions">
-    <p class="app-actions__total">Total Tasks: 0</p>
-    <button type="button" id="app-actions__del">Delete All</button>
+    <p class="app-actions__total">Total Tasks: <span>0</span></p>
+    <button type="button" class="not-visible" id="app-actions__del">Delete All</button>
   </div>
-  <div class="app-lists"></div>
+  <div class="app-lists">
+    <ul class="app-lists__list">
+      <p class="message">There are no task now</p>
+    </ul>
+  </div>
 `
+
+new toDoClass()

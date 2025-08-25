@@ -1,7 +1,7 @@
 @mixin form-size{
   min-height: 40px;
   max-height: 40px;
-  width: 356px;
+  min-width: 356px;
   display: flex;
   position: relative;
 }
@@ -12,6 +12,7 @@
   border-radius: 8px;
   padding-left: 15px;
   border: 1px solid var(--border);
+  transition: all 0.4s ease;
   &::placeholder{
     color: var(--placeholder);
     font-size: 16px;
@@ -19,6 +20,8 @@
     line-height: 100%;
   }
   &:focus{
+    border-color: var(--black);
+    color: var(--black);
     outline: none;
   }
 }
